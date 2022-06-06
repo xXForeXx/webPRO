@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<title>Primera pagina con sass</title>
+</head>
+<body class="bg-slate">
+	<script src="./js.js"></script>
+	<header id="header">
+		<nav id="header_nav">
+			<img src="./multimedia/logHeader.png" alt="img" class="header_nav--item" >
+			<span onclick="desplieguemenu()" class="activador_desplegable">
+			<img src="./multimedia/navlist.png" alt="img" class="header_nav--item" id="nav__list" >
+			</span>
+			<ul id="desplegable_menu">
+				<li class="desplegable_menu--item">
+					<a href="./index.html" class="desplegable_menu--item--hiper dM--item--h--inicio">Inicio</a>
+				</li>
+				<li class="desplegable_menu--item">
+					<a href="./portafolio.html" class="desplegable_menu--item--hiper">Portafolio</a>
+				</li>
+				<li class="desplegable_menu--item">
+					<a href="./multimedia.html" class="desplegable_menu--item--hiper">Multimedia</a>
+				</li>
+				<li class="desplegable_menu--item">
+					<a href="./contact.html" class="desplegable_menu--item--hiper">
+						<button id="desplegable_menu--item--button">Contactame</button>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="a__1">
+			<div class="a__2" id="a__2">
+					<span class="a__2--img" onclick="buttonhorario()" id="a__2--img">
+					</span>
+			</div>
+		</div>
+	</header>
+	<main id="main">
+		<section id="section_1">
+			<div class="section_1--container section_1--description">
+				<img src="./multimedia/developer.jpg" alt="Imagen de desarrollo" class="section_1--description--item di--img">
+				<h1 class="section_1--description--item di--title">Desarrollador Front-end</h1>
+				<p class="section_1--description--item di--text">Experiencia en el desarrollo de interfaces WEB</p>
+			</div>
+			<div class="section_1--container section_1--info">
+				<p class="section_1--info--text">experiencias con intelecto profesional y creativo</p>
+				<img src="./multimedia/vscode.jpg" alt="imagen de interfas de vscode" class="section_1--info--img">
+			</div>
+    	</section>
+        <section id="section__atributes">
+            <h2 class="section__atributes--title">Los atributos que me caracterizan </h2>
+        	<div class="section__atributes--container">
+            	<div class="section__atributes--container--card">
+                	<img src="./multimedia/html5.png" class="sAcontainer__card--Img">
+                	<p class="sAcontainer__card--Title">Html 5
+                	</p>
+                	<p class="sAcontainer__card--Text">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                	tempor incididunt ut labore et dolore magna aliqua.
+               		</p>
+            	</div>
+				<div class="section__atributes--container--card">
+                	<img src="./multimedia/css3.png" class="sAcontainer__card--Img">
+                	<p class="sAcontainer__card--Title">Css 3 
+                	</p>
+                	<p class="sAcontainer__card--Text">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                	tempor incididunt ut labore et dolore magna aliqua.
+               		</p>
+            	</div>
+				<div class="section__atributes--container--card">
+                	<img src="./multimedia/Javascript.png" class="sAcontainer__card--Img">
+                	<p class="sAcontainer__card--Title">JavaScript 
+                	</p>
+                	<p class="sAcontainer__card--Text">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                	tempor incididunt ut labore et dolore magna aliqua.
+               		</p>
+            	</div>				
+				<div class="section__atributes--container--card">
+                	<img src="./multimedia/python.png" class="sAcontainer__card--Img">
+                	<p class="sAcontainer__card--Title">Python 
+                	</p>
+                	<p class="sAcontainer__card--Text">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                	tempor incididunt ut labore et dolore magna aliqua.
+               		</p>
+            	</div>
+				<div class="section__atributes--container--card">
+                	<img src="./multimedia/github.png" class="sAcontainer__card--Img">
+                	<p class="sAcontainer__card--Title">Git & Github 
+                	</p>
+                	<p class="sAcontainer__card--Text">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                	tempor incididunt ut labore et dolore magna aliqua.
+               		</p>
+            	</div>
+				
+			</div>
+			</section>
+			
+			<article id="article">
+				<h5 class="articleTitle">Algunos de los proyectos que he realizado</h5>
+				<div class="articleContainer">
+					<div class="articleContainer__item">
+						<a href="./index.html" target="_blank">
+							<img src="./multimedia/proyectos/batabitss.png" alt="foto del proyecto" class="articleContainer__item--img">
+						</a>
+						<p class="articleContainer__item--title">Batabit</p>
+					</div>
+					<div class="articleContainer__item">
+						<a href="./index.html" target="_blank">
+						<img src="./multimedia/proyectos/doctorwebss.png" alt="foto del proyecto" class="articleContainer__item--img">
+						</a>
+						<p class="articleContainer__item--title">Doctorweb</p>
+					</div>
+					<div class="articleContainer__item">
+						<a href="./index.html" target="_blank">
+						<img src="./multimedia/proyectos/googlecloness.png" alt="foto del proyecto" class="articleContainer__item--img">
+						</a>
+						<p class="articleContainer__item--title">Google clon</p>
+					</div>
+					<div class="articleContainer__item">
+						<a href="./index.html" target="_blank">
+						<img src="./multimedia/proyectos/tuamigass.png" alt="foto del proyecto" class="articleContainer__item--img">
+						</a>
+						<p class="articleContainer__item--title">Tu amiga</p>
+					</div>
+				</div>
+			</article>
+
+			<section id="sectionContact">
+				<div class="sectionContact__container">
+				<h3 class="sectionContact__container--title">Contacto</h4>
+				<form class="sectionContact__container--form">
+						<input type="text" name="Nombre" id="nombre_form" placeholder="Nombre">
+						<input type="text" name="Descripcion" id="description_form" placeholder="Descripcion del servicio que estas nesecitando">
+						<input type="email" name="Email" id="email_form" placeholder="Tu correo electronico">
+						<input type="submit" name="submit" id="submit_form">
+				</form>
+				</div>
+			</section>
+			<footer id="sectionFooter" style="background-color: #280166;">
+				<img src="./multimedia/logHeader.png" alt="imgagen logo" class="sectionFooter__img">
+				<img src="./multimedia/logHeader.png" alt="foto de desplegablemenu" class="sectionFooter__img">			
+				<div class="sectionFooter__container">
+					<img src="./multimedia/seguimos.png" alt="facebook" class="section__container--img sC__img--facebook">
+					<img src="./multimedia/seguimos.png" alt="twitter" class="section__container--img sC__img--facebook">
+					<img src="./multimedia/seguimos.png" alt="correo" class="section__container--img sC__img--facebook">
+					<img src="./multimedia/seguimos.png" alt="github" class="section__container--img sC__img--facebook">
+					<img src="./multimedia/seguimos.png" alt="linkenid" class="section__container--img sC__img--facebook">            
+				</div>
+			</footer>
+			<div id="static__botton" >
+				<img src="./multimedia/logheader.png" alt="foto BD" class="static__botton--img" onclick="despliegueContact()">
+				<div class="desplegableContact" id="desplegable_Contact">
+					<a href="https://www.facebook.com/daniel.florez.37669" target="_blank">
+						<img src="./multimedia/facebooklogo.png" alt="facebook" class="desplegableContact--img dC__img--facebook">
+					</a>
+					<a href="https://twitter.com/DanielFlorezVa1" target="_blank">
+						<img src="./multimedia/twitterlogo.png" alt="twitter" class="desplegableContact--img dC__img--facebook">
+					</a>
+					<a href="https://github.com/xXForeXx" target="_blank">	
+					<img src="./multimedia/githublogo.png" alt="github" class="desplegableContact--img dC__img--facebook">
+					</a>
+					<a href="https://www.linkedin.com/in/daniel-florez-valencia-31a854224/" target="_blank">
+					<img src="./multimedia/linkedinlogo.png" alt="linkenid" class="desplegableContact--img dC__img--facebook">            
+					</a>
+				</div>
+			</div>
+		</main>
+</body>
+</html>
+
