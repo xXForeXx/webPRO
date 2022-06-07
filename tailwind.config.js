@@ -1,7 +1,9 @@
 module.exports = {
   content: ['./public/index.html'],
   theme: {
-    extend: {},
-  },
+    extend: {
+      colors: {"color-secundary" : "#280166"}
+    },
   plugins: [],
+  }
 }

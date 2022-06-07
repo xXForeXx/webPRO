@@ -4,17 +4,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<title>Primera pagina con sass</title>
+	<title>Daniel developer</title>
 </head>
-<body class="bg-slate">
-	<script src="./js.js"></script>
-	<header id="header">
-		<nav id="header_nav">
-			<img src="./multimedia/logHeader.png" alt="img" class="header_nav--item" >
+<body class="">
+	<header class="flex w-full h-14 relative bg-color-secundary">
+		<nav class="flex flex-col  justify-between w-full items-center">
+			<img src="./multimedia/logHeader.png" alt="img" class="w-10" >
 			<span onclick="desplieguemenu()" class="activador_desplegable">
 			<img src="./multimedia/navlist.png" alt="img" class="header_nav--item" id="nav__list" >
 			</span>
-			<ul id="desplegable_menu">
+			<ul class="hidden">
 				<li class="desplegable_menu--item">
 					<a href="./index.html" class="desplegable_menu--item--hiper dM--item--h--inicio">Inicio</a>
 				</li>
@@ -31,117 +30,123 @@
 				</li>
 			</ul>
 		</nav>
-		<div class="a__1">
-			<div class="a__2" id="a__2">
-					<span class="a__2--img" onclick="buttonhorario()" id="a__2--img">
-					</span>
+		<div class="bg-white w-10 h-6 absolute top-2 right-2 rounded-full">
+			<div class="relative w-full h-full">
+            <!--despues poner el javascript--> 
+            <div class="absolute w-6 h-6 bg-slate-700 rounded-full hover:right-0">                    
+                </div>
 			</div>
 		</div>
 	</header>
-	<main id="main">
-		<section id="section_1">
-			<div class="section_1--container section_1--description">
-				<img src="./multimedia/developer.jpg" alt="Imagen de desarrollo" class="section_1--description--item di--img">
-				<h1 class="section_1--description--item di--title">Desarrollador Front-end</h1>
-				<p class="section_1--description--item di--text">Experiencia en el desarrollo de interfaces WEB</p>
+	<main class="bg-gradient-to-r from-indigo-500 via-purple-700 to-pink-900">
+		<section class="flex flex-col">
+			<div class="flex flex-col items-center justify-center">
+				<img src="./multimedia/developer.jpg" alt="Imagen de desarrollo" class="w-40 h-40 object-cover rounded-full">
+				<h1 class="text-center text-teal-50">Desarrollador Front-end</h1>
+				<p class="text-left text-white" >Experiencia en el desarrollo de interfaces WEB</p>
 			</div>
-			<div class="section_1--container section_1--info">
-				<p class="section_1--info--text">experiencias con intelecto profesional y creativo</p>
-				<img src="./multimedia/vscode.jpg" alt="imagen de interfas de vscode" class="section_1--info--img">
+			<div class="flex flex-col w-full">
+				<p class="text-white">experiencias con intelecto profesional y creativo</p>
+				<img src="./multimedia/vscode.jpg" alt="imagen de interfas de vscode" class="w-full">
 			</div>
     	</section>
-        <section id="section__atributes">
-            <h2 class="section__atributes--title">Los atributos que me caracterizan </h2>
-        	<div class="section__atributes--container">
-            	<div class="section__atributes--container--card">
-                	<img src="./multimedia/html5.png" class="sAcontainer__card--Img">
-                	<p class="sAcontainer__card--Title">Html 5
+        <section class="flex flex-col">
+            <h2 class="text-white text-2xl">Los atributos que me caracterizan </h2>
+        	<div class="flex flex-wrap w-full justify-center">
+            	<div class="m-5">
+                	<img src="./multimedia/html5.png" class="w-16">
+                	<p class="text-xl font-semibold shadow">Html 5
                 	</p>
-                	<p class="sAcontainer__card--Text">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                	<p class="hidden">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 	tempor incididunt ut labore et dolore magna aliqua.
                		</p>
             	</div>
-				<div class="section__atributes--container--card">
-                	<img src="./multimedia/css3.png" class="sAcontainer__card--Img">
-                	<p class="sAcontainer__card--Title">Css 3 
+				<div class="m-5">
+                	<img src="./multimedia/css3.png" class="w-16">
+                	<p class="text-xl font-semibold shadow">Css 3 
                 	</p>
-                	<p class="sAcontainer__card--Text">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                	<p class="hidden">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 	tempor incididunt ut labore et dolore magna aliqua.
                		</p>
             	</div>
-				<div class="section__atributes--container--card">
-                	<img src="./multimedia/Javascript.png" class="sAcontainer__card--Img">
-                	<p class="sAcontainer__card--Title">JavaScript 
+				<div class="m-5">
+                	<img src="./multimedia/Javascript.png" class="w-16">
+                	<p class="text-xl font-semibold shadow">JavaScript 
                 	</p>
-                	<p class="sAcontainer__card--Text">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                	<p class="hidden">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 	tempor incididunt ut labore et dolore magna aliqua.
                		</p>
             	</div>				
-				<div class="section__atributes--container--card">
-                	<img src="./multimedia/python.png" class="sAcontainer__card--Img">
-                	<p class="sAcontainer__card--Title">Python 
+				<div class="m-5">
+                	<img src="./multimedia/python.png" class="w-16">
+                	<p class="text-xl font-semibold shadow">Python 
                 	</p>
-                	<p class="sAcontainer__card--Text">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                	<p class="hidden">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 	tempor incididunt ut labore et dolore magna aliqua.
                		</p>
             	</div>
-				<div class="section__atributes--container--card">
-                	<img src="./multimedia/github.png" class="sAcontainer__card--Img">
-                	<p class="sAcontainer__card--Title">Git & Github 
+				<div class="m-5">
+                	<img src="./multimedia/github.png" class="w-16">
+                	<p class="text-xl font-semibold shadow">Git & Github 
                 	</p>
-                	<p class="sAcontainer__card--Text">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                	<p class="hidden">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 	tempor incididunt ut labore et dolore magna aliqua.
                		</p>
             	</div>
 				
 			</div>
 			</section>
-			
-			<article id="article">
-				<h5 class="articleTitle">Algunos de los proyectos que he realizado</h5>
-				<div class="articleContainer">
-					<div class="articleContainer__item">
-						<a href="./index.html" target="_blank">
-							<img src="./multimedia/proyectos/batabitss.png" alt="foto del proyecto" class="articleContainer__item--img">
+		
+			<article class="flex flex-col justify-center bg-color-secundary">
+				<h5 class="text-xl text-white font-semibold">Algunos de los proyectos que he realizado</h5>
+				<div class="flex flex-col justify-center">
+					<div class="flex flex-col justify-center relative my-3">
+						<a href="./index.html" target="_blank" class="flex justify-center w-full">
+							<img src="./multimedia/proyectos/batabitss.png" alt="foto del proyecto" class="w-11/12 p-3 border-2 border-cyan-500 rounded-lg">
 						</a>
-						<p class="articleContainer__item--title">Batabit</p>
+						<p class="flex justify-around bg-color-secundary rounded-lg text-white  p-1 text-center text-sm box-border border-2 border-cyan-500 absolute -bottom-5 left-5">Batabit</p>
 					</div>
-					<div class="articleContainer__item">
-						<a href="./index.html" target="_blank">
-						<img src="./multimedia/proyectos/doctorwebss.png" alt="foto del proyecto" class="articleContainer__item--img">
+					<div class="flex flex-col justify-center relative my-3">
+						<a href="./index.html" target="_blank" class="flex justify-center w-full">
+						<img src="./multimedia/proyectos/doctorwebss.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg">
 						</a>
-						<p class="articleContainer__item--title">Doctorweb</p>
+						<p class="flex justify-around bg-color-secundary rounded-lg text-white  p-1 text-center text-sm box-border border-2  border-cyan-500 absolute -bottom-5 left-5">Doctorweb</p>
 					</div>
-					<div class="articleContainer__item">
-						<a href="./index.html" target="_blank">
-						<img src="./multimedia/proyectos/googlecloness.png" alt="foto del proyecto" class="articleContainer__item--img">
+					<div class="flex flex-col justify-center relative my-3">
+						<a href="./index.html" target="_blank" class="flex justify-center w-full">
+						<img src="./multimedia/proyectos/googlecloness.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg">
 						</a>
-						<p class="articleContainer__item--title">Google clon</p>
+						<p class="flex justify-around bg-color-secundary rounded-lg text-white  p-1 text-center text-sm box-border border-2  border-cyan-500 absolute -bottom-5 left-5">Google clon</p>
 					</div>
-					<div class="articleContainer__item">
-						<a href="./index.html" target="_blank">
-						<img src="./multimedia/proyectos/tuamigass.png" alt="foto del proyecto" class="articleContainer__item--img">
+					<div class="flex flex-col justify-center relative my-3">
+						<a href="./index.html" target="_blank" class="flex justify-center w-full">
+						<img src="./multimedia/proyectos/tuamigass.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg">
 						</a>
-						<p class="articleContainer__item--title">Tu amiga</p>
+						<p class="flex justify-around bg-color-secundary rounded-lg text-white  p-1 text-center text-sm box-border border-2  border-cyan-500 absolute -bottom-5 left-5">Tu amiga</p>
 					</div>
 				</div>
 			</article>
-
-			<section id="sectionContact">
-				<div class="sectionContact__container">
-				<h3 class="sectionContact__container--title">Contacto</h4>
-				<form class="sectionContact__container--form">
-						<input type="text" name="Nombre" id="nombre_form" placeholder="Nombre">
-						<input type="text" name="Descripcion" id="description_form" placeholder="Descripcion del servicio que estas nesecitando">
-						<input type="email" name="Email" id="email_form" placeholder="Tu correo electronico">
-						<input type="submit" name="submit" id="submit_form">
+			<section class="bg-color-secundary py-6 my-14">
+				<div class="flex flex-col justify-center items-center m-3 border-2 border-cyan-500 rounded-lg">
+				<h3 class="text-white font-semibold text-2xl">Contacto</h4>
+				<form class="flex flex-col items-center w-11/12 relative mb-10">
+						<input type="text" name="Nombre" id="nombre_form" placeholder="Nombre" class=" h-7 my-3 rounded-lg px-3">
+						<input type="email" name="Email" id="email_form" placeholder="Tu correo electronico" class="h-7 my-3 rounded-lg px-3">
+                        <input type="text" name="Descripcion" id="description_form" placeholder="Descripcion del servicio que estas nesecitando" class="h-28 my-3 rounded-lg px-3">
+						<input type="submit" name="submit" id="submit_form" class="w-1/2 h-8 my-3 bg-color-secundary rounded-lg text-white absolute -bottom-16 border-2 border-cyan-500">
 				</form>
 				</div>
 			</section>
-			<footer id="sectionFooter" style="background-color: #280166;">
+			<footer class="flex flex-row bg-color-secundary">
+                <a href="http://">
 				<img src="./multimedia/logHeader.png" alt="imgagen logo" class="sectionFooter__img">
-				<img src="./multimedia/logHeader.png" alt="foto de desplegablemenu" class="sectionFooter__img">			
-				<div class="sectionFooter__container">
+                </a>
+
+                <!--cuando se da click se despliega las redes sociales con javascript-->
+                <a href=".//">
+                <img src="./multimedia/logHeader.png" alt="foto de desplegablemenu" class="sectionFooter__img">			
+			    </a>	
+                <div class="hidden">
 					<img src="./multimedia/seguimos.png" alt="facebook" class="section__container--img sC__img--facebook">
 					<img src="./multimedia/seguimos.png" alt="twitter" class="section__container--img sC__img--facebook">
 					<img src="./multimedia/seguimos.png" alt="correo" class="section__container--img sC__img--facebook">
@@ -149,9 +154,9 @@
 					<img src="./multimedia/seguimos.png" alt="linkenid" class="section__container--img sC__img--facebook">            
 				</div>
 			</footer>
-			<div id="static__botton" >
-				<img src="./multimedia/logheader.png" alt="foto BD" class="static__botton--img" onclick="despliegueContact()">
-				<div class="desplegableContact" id="desplegable_Contact">
+			<div class="fixed top-36 right-1">
+				<img src="./multimedia/logheader.png" alt="foto BD" class="w-14" onclick="despliegueContact()">
+				<div class="hidden">
 					<a href="https://www.facebook.com/daniel.florez.37669" target="_blank">
 						<img src="./multimedia/facebooklogo.png" alt="facebook" class="desplegableContact--img dC__img--facebook">
 					</a>
