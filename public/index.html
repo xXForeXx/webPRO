@@ -11,10 +11,10 @@
 		<div class="w-full h-full relative">
 		<nav class="flex flex-col  justify-between w-full items-center my-2">
 			<img src="./multimedia/logHeader.png" alt="img" class="w-10 my-2" >
-			<span onclick="desplieguemenu()" class="activador_desplegable">
-			<img src="./multimedia/navlist.png" alt="img" class="mb-2" id="nav__list" >
+			<span onclick="despliegueMenuHeader('')" id="desplegableHeader" class="flex flex-col items-center justify-center w-full ">
+			<img src="./multimedia/navlist.png" alt="img" class="w-8 mb-2" id="nav__list" >
 			</span>
-			<ul class="hidden flex-col justify-center items-center text-teal-50 font-medium ">
+			<ul class="hidden flex-col justify-center items-center w-full text-teal-50 font-medium shadow-inner" id="menuHeader">
 				<li class="m-1">
 					<a href="./index.html" class="desplegable_menu--item--per dM--item--h--inicio">Inicio</a>
 				</li>
@@ -31,16 +31,15 @@
 				</li>
 			</ul>
 		</nav>
-		<div class="bg-white w-10 h-6 absolute top-2 right-2 rounded-full">
+		<div class="bg-white w-10 h-6 absolute top-4 right-3 r-2 rounded-full">
 			<div class="relative w-full h-full">
             <!--despues poner el javascript--> 
-            <div class="absolute w-6 h-6 bg-slate-700 rounded-full hover:right-0">                    
+            <div class="absolute w-8 h-8 bg-white rounded-full top-[-5px] -left-3 hover:-right-3">                    
                 </div>
 			</div>
 		</div>
 	</div>
 	</header>
-	
 	<main>
 		<section class="flex flex-col mt-36">
 			<div class="flex flex-col items-center justify-center mb-2">
@@ -113,25 +112,25 @@
 				<div class="flex flex-col justify-center">
 					<div class="flex flex-col justify-center relative my-6">
 						<a href="./index.html" target="_blank" class="flex justify-center w-full">
-							<img src="./multimedia/proyectos/batabitss.png" alt="foto del proyecto" class="w-11/12 p-3 border-2 border-cyan-500 rounded-lg hover:w-full">
+							<img src="./multimedia/proyectos/batabitss.png" alt="foto del proyecto" class="w-11/12 p-3 border-2 border-cyan-500 rounded-lg hover:w-full hover:p-0 hover:border-0 hover:rounded-none ">
 						</a>
 						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5">Batabit</p>
 					</div>
 					<div class="flex flex-col justify-center relative my-6">
 						<a href="./index.html" target="_blank" class="flex justify-center w-full">
-						<img src="./multimedia/proyectos/doctorwebss.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg">
+						<img src="./multimedia/proyectos/doctorwebss.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg hover:w-full hover:p-0 hover:border-0 hover:rounded-none ">
 						</a>
 						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5">Doctorweb</p>
 					</div>
 					<div class="flex flex-col justify-center relative my-6">
 						<a href="./index.html" target="_blank" class="flex justify-center w-full">
-						<img src="./multimedia/proyectos/googlecloness.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg">
+						<img src="./multimedia/proyectos/googlecloness.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg hover:w-full hover:p-0 hover:border-0 hover:rounded-none ">
 						</a>
 						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5">Google clon</p>
 					</div>
 					<div class="flex flex-col justify-center relative my-6">
 						<a href="./index.html" target="_blank" class="flex justify-center w-full">
-						<img src="./multimedia/proyectos/tuamigass.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg">
+						<img src="./multimedia/proyectos/tuamigass.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg hover:w-full hover:p-0 hover:border-0 hover:rounded-none ">
 						</a>
 						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5">Tu amiga</p>
 					</div>
@@ -148,10 +147,10 @@
 				</form>
 				</div>
 			</section>
-			<aside class="flex flex-col justify-center items-center w-16 h-16 fixed top-56 right-1 rounded-full hover:bg-color-secundary hover:shadow-[-1px_0px_14px_1px_rgba(0,209,255, 0.25)]">
+			<aside class="flex flex-col justify-center items-center w-16 h-16 fixed top-56 right-1 rounded-full hover:bg-color-secundary hover:shadow-[-1px_0px_14px_1px_rgba(0,209,255, 0.25)]"  onclick="despliegueMenuAside('')">
 				<div class="relative flex flex-col justify-center items-center">
-				<img src="./multimedia/logheader.png" alt="foto BD" class="w-14" onclick="despliegueContact()">
-				<div class="hidden flex-col items-center absolute top-14 rounded-full">
+				<img src="./multimedia/logheader.png" alt="foto BD" class="w-14">
+				<div class="hidden flex-col items-center absolute top-14 rounded-full" id="menuAside">
 					<a href="https://www.facebook.com/daniel.florez.37669" target="_blank">
 						<img src="./multimedia/facebooklogo.png" alt="facebook" class="desplegableContact--img dC__img--facebook">
 					</a>
@@ -167,23 +166,25 @@
 				</div>
 			</div>
 			</aside>
-			<footer class="flex flex-col justify-around items-center bg-color-secundary">
+			<div class="flex flex-col justify-around items-center bg-color-secundary">
 				<div class="w-full my-3 flex flex-row justify-around items-center">
-					<a href="http://" class="w-12">
+					<span class="w-12">
 						<img src="./multimedia/logHeader.png" alt="imgagen logo" class="w-full object-cover">
-						</a>
-		
+					</span>
 						<!--cuando se da click se despliega las redes sociales con javascript-->
-						<a href=".//" class="w-12">
+					<span class="w-12" onclick="despliegueMenuFooter()" >
 						<img src="./multimedia/footerarrwow.png" alt="foto de desplegablemenu" class="w-full object-cover">			
-						</a>
+					</span>
 				</div>	
-                <div class="hidden flex-wrap items-center justify-center">
+                <div class="hidden flex-wrap items-center justify-center" id="menuFooter" style="display: none">
 					<a href="http://" class="m-3 text-white font-medium">Informacion</a>
 					<a href="http://" class="m-3 text-white font-medium">Documentacion</a>
 					<a href="http://" class="m-3 text-white font-medium">Contacto</a>
 					<a href="http://" class="m-3 text-white font-medium">Multimedia</a>           
 				</div>
+			</div>
+			<footer>
+				<p>Hecho con amor desde COL</p>
 			</footer>
 			<script src="./js.js"></script>
 		</main>
