@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html class="bg-gradient-to-r from-gradient-1 via-gradient-2 to-gradiemt-3">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<title>Daniel developer</title>
 </head>
-<body class="">
-	<header class="flex w-full h-14 relative bg-color-secundary">
-		<nav class="flex flex-col  justify-between w-full items-center">
-			<img src="./multimedia/logHeader.png" alt="img" class="w-10" >
+<body class="relative"> 
+		<header class="flex w-full fixed top-0 bg-color-secundary z-10 shadow-[-1px_5px_20px_1px_rgba(0,0,0,0.75)]">
+		<div class="w-full h-full relative">
+		<nav class="flex flex-col  justify-between w-full items-center my-2">
+			<img src="./multimedia/logHeader.png" alt="img" class="w-10 my-2" >
 			<span onclick="desplieguemenu()" class="activador_desplegable">
-			<img src="./multimedia/navlist.png" alt="img" class="header_nav--item" id="nav__list" >
+			<img src="./multimedia/navlist.png" alt="img" class="mb-2" id="nav__list" >
 			</span>
-			<ul class="hidden">
-				<li class="desplegable_menu--item">
-					<a href="./index.html" class="desplegable_menu--item--hiper dM--item--h--inicio">Inicio</a>
+			<ul class="hidden flex-col justify-center items-center text-teal-50 font-medium ">
+				<li class="m-1">
+					<a href="./index.html" class="desplegable_menu--item--per dM--item--h--inicio">Inicio</a>
 				</li>
-				<li class="desplegable_menu--item">
+				<li class="m-1">
 					<a href="./portafolio.html" class="desplegable_menu--item--hiper">Portafolio</a>
 				</li>
-				<li class="desplegable_menu--item">
+				<li class="m-1">
 					<a href="./multimedia.html" class="desplegable_menu--item--hiper">Multimedia</a>
 				</li>
-				<li class="desplegable_menu--item">
-					<a href="./contact.html" class="desplegable_menu--item--hiper">
-						<button id="desplegable_menu--item--button">Contactame</button>
+				<li class="m-1">
+					<a href="./contact.html" class="">
+						<button class="flex items-center h-8 px-3 py-2 bg-cyan-500 font-semibold text-color-secundary rounded-lg">Contactame</button>
 					</a>
 				</li>
 			</ul>
@@ -37,57 +38,67 @@
                 </div>
 			</div>
 		</div>
+	</div>
 	</header>
-	<main class="bg-gradient-to-r from-indigo-500 via-purple-700 to-pink-900">
-		<section class="flex flex-col">
-			<div class="flex flex-col items-center justify-center">
-				<img src="./multimedia/developer.jpg" alt="Imagen de desarrollo" class="w-40 h-40 object-cover rounded-full">
-				<h1 class="text-center text-teal-50">Desarrollador Front-end</h1>
-				<p class="text-left text-white" >Experiencia en el desarrollo de interfaces WEB</p>
+	
+	<main>
+		<section class="flex flex-col mt-36">
+			<div class="flex flex-col items-center justify-center mb-2">
+				<img src="./multimedia/developer.jpg" alt="Imagen de desarrollo" class="w-40 h-40 object-cover rounded-full my-3">
+				<h1 class="text-center text-xl font-bold font-sans text-cyan-400 my-1 ">Desarrollador Front-end</h1>
+				<p class="text-center text-lg text-white  my-1" >Experiencia en el desarrollo de interfaces WEB</p>
 			</div>
-			<div class="flex flex-col w-full">
-				<p class="text-white">experiencias con intelecto profesional y creativo</p>
-				<img src="./multimedia/vscode.jpg" alt="imagen de interfas de vscode" class="w-full">
+			<div class="flex flex-col w-full my-3">
+				<p class="text-cyan-300 text-lg font-semibold mx-4 ">Experiencias con intelecto profesional y creativo</p>
+				<img src="./multimedia/vscode.jpg" alt="imagen de interfas de vscode" class="w-full my-4 shadow-[-1px_0px_14px_1px_rgba(0,0,0,0.75)]">
 			</div>
     	</section>
-        <section class="flex flex-col">
-            <h2 class="text-white text-2xl">Los atributos que me caracterizan </h2>
-        	<div class="flex flex-wrap w-full justify-center">
-            	<div class="m-5">
+        <section class="flex flex-col shadow-[-1px_0px_14px_1px_rgba(0,0,0,0.75)]">
+            <h2 class="text-cyan-300 text-2xl font-medium mx-3 mt-9">Los atributos que me caracterizan </h2>
+        	<div class="flex flex-wrap w-full justify-center my-6">
+            	<div class="flex flex-col items-center m-5 ">
                 	<img src="./multimedia/html5.png" class="w-16">
-                	<p class="text-xl font-semibold shadow">Html 5
+                	<p class="text-xl text-cyan-100 font-semibold ">Html 5
                 	</p>
                 	<p class="hidden">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                	tempor incididunt ut labore et dolore magna aliqua.
+                	tempor incididunt ut labore et dolorbe magna aliqua.
                		</p>
             	</div>
-				<div class="m-5">
+				<div class="flex flex-col items-center m-5">
                 	<img src="./multimedia/css3.png" class="w-16">
-                	<p class="text-xl font-semibold shadow">Css 3 
+                	<p class="text-xl  text-cyan-100 font-semibold">Css 3 
                 	</p>
                 	<p class="hidden">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 	tempor incididunt ut labore et dolore magna aliqua.
                		</p>
             	</div>
-				<div class="m-5">
+				<div class="flex flex-col items-center m-5">
                 	<img src="./multimedia/Javascript.png" class="w-16">
-                	<p class="text-xl font-semibold shadow">JavaScript 
+                	<p class="text-xl  text-cyan-100 font-semibold">JavaScript 
                 	</p>
                 	<p class="hidden">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 	tempor incididunt ut labore et dolore magna aliqua.
                		</p>
             	</div>				
-				<div class="m-5">
+				<div class="flex flex-col items-center m-5">
                 	<img src="./multimedia/python.png" class="w-16">
-                	<p class="text-xl font-semibold shadow">Python 
+                	<p class="text-xl  text-cyan-100 font-semibold">Python 
                 	</p>
                 	<p class="hidden">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 	tempor incididunt ut labore et dolore magna aliqua.
                		</p>
             	</div>
-				<div class="m-5">
+				<div class="flex flex-col items-center m-5">
                 	<img src="./multimedia/github.png" class="w-16">
-                	<p class="text-xl font-semibold shadow">Git & Github 
+                	<p class="text-xl  text-cyan-100 font-semibold">Git & Github 
+                	</p>
+                	<p class="hidden">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                	tempor incididunt ut labore et dolore magna aliqua.
+               		</p>
+            	</div>
+				<div class="flex flex-col items-center m-5">
+                	<img src="./multimedia/tailwindLogo.png" class="w-16">
+                	<p class="text-xl  text-cyan-100 font-semibold">Tailwind css
                 	</p>
                 	<p class="hidden">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 	tempor incididunt ut labore et dolore magna aliqua.
@@ -97,66 +108,50 @@
 			</div>
 			</section>
 		
-			<article class="flex flex-col justify-center bg-color-secundary">
-				<h5 class="text-xl text-white font-semibold">Algunos de los proyectos que he realizado</h5>
+			<article class="flex flex-col py-11 mb-3 mt-0 justify-center bg-color-secundary shadow-[-1px_0px_14px_1px_rgba(0,0,0,0.75)]">
+				<h5 class="mx-5 my-3 text-xl text-white font-semibold">Algunos de los proyectos que he realizado</h5>
 				<div class="flex flex-col justify-center">
-					<div class="flex flex-col justify-center relative my-3">
+					<div class="flex flex-col justify-center relative my-6">
 						<a href="./index.html" target="_blank" class="flex justify-center w-full">
-							<img src="./multimedia/proyectos/batabitss.png" alt="foto del proyecto" class="w-11/12 p-3 border-2 border-cyan-500 rounded-lg">
+							<img src="./multimedia/proyectos/batabitss.png" alt="foto del proyecto" class="w-11/12 p-3 border-2 border-cyan-500 rounded-lg hover:w-full">
 						</a>
-						<p class="flex justify-around bg-color-secundary rounded-lg text-white  p-1 text-center text-sm box-border border-2 border-cyan-500 absolute -bottom-5 left-5">Batabit</p>
+						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5">Batabit</p>
 					</div>
-					<div class="flex flex-col justify-center relative my-3">
+					<div class="flex flex-col justify-center relative my-6">
 						<a href="./index.html" target="_blank" class="flex justify-center w-full">
 						<img src="./multimedia/proyectos/doctorwebss.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg">
 						</a>
-						<p class="flex justify-around bg-color-secundary rounded-lg text-white  p-1 text-center text-sm box-border border-2  border-cyan-500 absolute -bottom-5 left-5">Doctorweb</p>
+						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5">Doctorweb</p>
 					</div>
-					<div class="flex flex-col justify-center relative my-3">
+					<div class="flex flex-col justify-center relative my-6">
 						<a href="./index.html" target="_blank" class="flex justify-center w-full">
 						<img src="./multimedia/proyectos/googlecloness.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg">
 						</a>
-						<p class="flex justify-around bg-color-secundary rounded-lg text-white  p-1 text-center text-sm box-border border-2  border-cyan-500 absolute -bottom-5 left-5">Google clon</p>
+						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5">Google clon</p>
 					</div>
-					<div class="flex flex-col justify-center relative my-3">
+					<div class="flex flex-col justify-center relative my-6">
 						<a href="./index.html" target="_blank" class="flex justify-center w-full">
 						<img src="./multimedia/proyectos/tuamigass.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg">
 						</a>
-						<p class="flex justify-around bg-color-secundary rounded-lg text-white  p-1 text-center text-sm box-border border-2  border-cyan-500 absolute -bottom-5 left-5">Tu amiga</p>
+						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5">Tu amiga</p>
 					</div>
 				</div>
 			</article>
-			<section class="bg-color-secundary py-6 my-14">
+			<section class="bg-color-secundary py-6 my-14 shadow-[-1px_0px_14px_1px_rgba(0,0,0,0.75)]">
 				<div class="flex flex-col justify-center items-center m-3 border-2 border-cyan-500 rounded-lg">
 				<h3 class="text-white font-semibold text-2xl">Contacto</h4>
 				<form class="flex flex-col items-center w-11/12 relative mb-10">
-						<input type="text" name="Nombre" id="nombre_form" placeholder="Nombre" class=" h-7 my-3 rounded-lg px-3">
-						<input type="email" name="Email" id="email_form" placeholder="Tu correo electronico" class="h-7 my-3 rounded-lg px-3">
-                        <input type="text" name="Descripcion" id="description_form" placeholder="Descripcion del servicio que estas nesecitando" class="h-28 my-3 rounded-lg px-3">
+						<input type="text" name="Nombre" id="nombre_form" placeholder="Nombre" class="w-full h-7 my-3 rounded-lg px-3">
+						<input type="email" name="Email" id="email_form" placeholder="Tu correo electronico" class="w-full h-7 my-3 rounded-lg px-3">
+                        <input type="text" name="Descripcion" id="description_form" placeholder="Descripcion del servicio que estas nesecitando" class="w-full h-28 my-3 rounded-lg px-3">
 						<input type="submit" name="submit" id="submit_form" class="w-1/2 h-8 my-3 bg-color-secundary rounded-lg text-white absolute -bottom-16 border-2 border-cyan-500">
 				</form>
 				</div>
 			</section>
-			<footer class="flex flex-row bg-color-secundary">
-                <a href="http://">
-				<img src="./multimedia/logHeader.png" alt="imgagen logo" class="sectionFooter__img">
-                </a>
-
-                <!--cuando se da click se despliega las redes sociales con javascript-->
-                <a href=".//">
-                <img src="./multimedia/logHeader.png" alt="foto de desplegablemenu" class="sectionFooter__img">			
-			    </a>	
-                <div class="hidden">
-					<img src="./multimedia/seguimos.png" alt="facebook" class="section__container--img sC__img--facebook">
-					<img src="./multimedia/seguimos.png" alt="twitter" class="section__container--img sC__img--facebook">
-					<img src="./multimedia/seguimos.png" alt="correo" class="section__container--img sC__img--facebook">
-					<img src="./multimedia/seguimos.png" alt="github" class="section__container--img sC__img--facebook">
-					<img src="./multimedia/seguimos.png" alt="linkenid" class="section__container--img sC__img--facebook">            
-				</div>
-			</footer>
-			<div class="fixed top-36 right-1">
+			<aside class="flex flex-col justify-center items-center w-16 h-16 fixed top-56 right-1 rounded-full hover:bg-color-secundary hover:shadow-[-1px_0px_14px_1px_rgba(0,209,255, 0.25)]">
+				<div class="relative flex flex-col justify-center items-center">
 				<img src="./multimedia/logheader.png" alt="foto BD" class="w-14" onclick="despliegueContact()">
-				<div class="hidden">
+				<div class="hidden flex-col items-center absolute top-14 rounded-full">
 					<a href="https://www.facebook.com/daniel.florez.37669" target="_blank">
 						<img src="./multimedia/facebooklogo.png" alt="facebook" class="desplegableContact--img dC__img--facebook">
 					</a>
@@ -171,6 +166,26 @@
 					</a>
 				</div>
 			</div>
+			</aside>
+			<footer class="flex flex-col justify-around items-center bg-color-secundary">
+				<div class="w-full my-3 flex flex-row justify-around items-center">
+					<a href="http://" class="w-12">
+						<img src="./multimedia/logHeader.png" alt="imgagen logo" class="w-full object-cover">
+						</a>
+		
+						<!--cuando se da click se despliega las redes sociales con javascript-->
+						<a href=".//" class="w-12">
+						<img src="./multimedia/footerarrwow.png" alt="foto de desplegablemenu" class="w-full object-cover">			
+						</a>
+				</div>	
+                <div class="hidden flex-wrap items-center justify-center">
+					<a href="http://" class="m-3 text-white font-medium">Informacion</a>
+					<a href="http://" class="m-3 text-white font-medium">Documentacion</a>
+					<a href="http://" class="m-3 text-white font-medium">Contacto</a>
+					<a href="http://" class="m-3 text-white font-medium">Multimedia</a>           
+				</div>
+			</footer>
+			<script src="./js.js"></script>
 		</main>
 </body>
 </html>
