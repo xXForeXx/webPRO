@@ -26,3 +26,6 @@ function despliegueMenuFooter(){
     }
 }
 
+function changeHorario(){
+    
+}
