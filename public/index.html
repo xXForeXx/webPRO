@@ -9,29 +9,29 @@
 <body class="relative"> 
 		<header class="flex w-full fixed top-0 bg-color-secundary z-10 shadow-[-1px_5px_20px_1px_rgba(0,0,0,0.75)]">
 		<div class="w-full h-full relative">
-		<nav class="flex flex-col  justify-between w-full items-center my-2">
-			<img src="./multimedia/logHeader.png" alt="img" class="w-10 my-2" >
-			<span onclick="despliegueMenuHeader('')" id="desplegableHeader" class="flex flex-col items-center justify-center w-full hover:animate-bounce">
+		<nav class="flex flex-col  justify-between w-full items-center my-2 sm:flex-row sm:justify-around">
+			<img src="./multimedia/logHeader.png" alt="img" class="w-10 my-2 hover:scale-150 duration-200 ease-linear sm:ml-5 sm:w-14">
+			<span onclick="despliegueMenuHeader('')" id="desplegableHeader" class="flex flex-col items-center justify-center w-full hover:translate-y-2 duration-500 delay-75 ease-out sm:hidden">
 			<img src="./multimedia/navlist.png" alt="img" class="w-8 mb-2" id="nav__list" >
 			</span>
-			<ul class="hidden flex-col justify-center items-center w-full bg-slate-900 text-teal-50 font-medium translate-y-3 shadpe  shadow-[0px_10px_12px_0px_rgba(0,0,0,0.75)_inset]" id="menuHeader">
-				<li class="m-1 mt-6">
-					<a href="./index.html" class="text-white hover:text-cyan-500 hover:text-lg">Inicio</a>
+			<ul class="hidden flex-col justify-center items-center w-full bg-slate-900 text-teal-50 font-medium translate-y-3 shadpe  shadow-[0px_10px_12px_0px_rgba(0,0,0,0.75)_inset] sm:flex sm:flex-row sm:justify-end sm:m-0 p-0 sm:bg-inherit sm:shadow-none sm:mr-5 sm:items-baseline" id="menuHeader">
+				<li class="m-1 mt-6 sm:m-0 sm:ml-4">
+					<a href="./index.html" class="text-white hover:text-cyan-500 hover:text-lg sm:text-lg">Inicio</a>
 				</li>
-				<li class="m-1">
-					<a href="./portafolio.html" class="text-white hover:text-cyan-500 hover:text-lg">Portafolio</a>
+				<li class="m-1 sm:m-0 sm:ml-4">
+					<a href="./portafolio.html" class="text-white hover:text-cyan-500 hover:text-lg sm:text-lg">Portafolio</a>
 				</li>
-				<li class="m-1">
-					<a href="./multimedia.html" class="text-white hover:text-cyan-500 hover:text-lg">Multimedia</a>
+				<li class="m-1 sm:m-0 sm:ml-4">
+					<a href="./multimedia.html" class="text-white hover:text-cyan-500 hover:text-lg sm:text-lg">Multimedia</a>
 				</li>
-				<li class="m-1">
+				<li class="m-1 sm:m-0 sm:ml-4">
 					<a href="./contact.html" class="">
-						<button class="flex items-center h-8 px-3 py-2 mb-3 bg-cyan-500 font-semibold text-color-secundary rounded-lg hover:text-lg hover:text-white" >Contactame</button>
+						<button class="flex items-center h-8 px-3 py-2 mb-3 bg-cyan-500 font-semibold text-color-secundary rounded-lg hover:text-lg hover:text-white sm:text-lg" >Contactame</button>
 					</a>
 				</li>
 			</ul>
 		</nav>
-		<div class="bg-white w-10 h-6 absolute top-4 right-3 r-2 rounded-full">
+		<div class="bg-white w-10 h-6 absolute top-4 right-3 r-2 rounded-full sm: sm:left-28 sm:top-8 ">
 			<div class="relative w-full h-full">
             <!--despues poner el javascript--> 
             <div class="absolute w-8 h-8 bg-white rounded-full top-[-5px] -left-3 hover:-right-3">                    
@@ -43,27 +43,27 @@
 	<main>
 		<section class="flex flex-col mt-36">
 			<div class="flex flex-col items-center justify-center mb-2">
-				<img src="./multimedia/developer.jpg" alt="Imagen de desarrollo" class="w-40 h-40 object-cover rounded-full my-3">
-				<h1 class="text-center text-xl font-bold font-sans text-cyan-400 my-1 ">Desarrollador Front-end</h1>
-				<p class="text-center text-lg text-white  my-1" >Experiencia en el desarrollo de interfaces WEB</p>
+				<img src="./multimedia/developer.jpg" alt="Imagen de desarrollo" class="w-40 h-40 object-cover rounded-full my-3 hover:scale-125 duration-500 delay-75 hover:rounded-none ease-out sm:rounded-3xl">
+				<h1 class="text-center text-xl font-bold font-sans text-cyan-400 my-1 sm:text-2xl">Desarrollador Front-end</h1>
+				<p class="text-center text-lg text-white  my-1 sm:text-xl" >Experiencia en el desarrollo de interfaces WEB</p>
 			</div>
-			<div class="flex flex-col w-full my-3">
-				<p class="text-cyan-300 text-lg font-semibold mx-4 ">Experiencias con intelecto profesional y creativo</p>
-				<img src="./multimedia/vscode.jpg" alt="imagen de interfas de vscode" class="w-full my-4 shadow-[-1px_0px_14px_1px_rgba(0,0,0,0.75)]">
+			<div class="flex flex-col w-full my-3 sm:items-center sm:bg-color-secundary lg:bg-inherit lg:items-start">
+				<p class="text-cyan-300 text-lg font-semibold mx-4 sm:text-2xl sm:text-center sm:my-6">Experiencias con intelecto profesional y creativo</p>
+				<img src="./multimedia/vscode.jpg" alt="imagen de interfas de vscode" class="w-full my-4 shadow-[-1px_0px_14px_1px_rgba(0,0,0,0.75)] max-w-md sm:object-cover sm:w-full sm:h-auto ">
 			</div>
     	</section>
         <section class="flex flex-col shadow-[-1px_0px_14px_1px_rgba(0,0,0,0.75)]">
-            <h2 class="text-cyan-300 text-2xl font-medium mx-3 mt-9">Los atributos que me caracterizan </h2>
+            <h2 class="text-cyan-300 text-2xl font-medium mx-3 mt-9 sm:text-2xl sm:ml-16">Los atributos que me caracterizan </h2>
         	<div class="flex flex-wrap w-full justify-center my-6">
-            	<div class="flex flex-col items-center m-5 w-28 text-center">
-                	<img src="./multimedia/html5.png" class="w-16">
+            	<div class="flex flex-col items-center m-5 w-28 text-center hover:scale-125 duration-300 ease-out">
+                	<img src="./multimedia/html5.png" class="w-16 ">
                 	<p class="text-xl text-cyan-100 font-semibold ">Html 5
                 	</p>
                 	<p class="hidden">describcion de los atributos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 	tempor incididunt ut labore et dolorbe magna aliqua.
                		</p>
             	</div>
-				<div class="flex flex-col items-center m-5 w-28 text-center">
+				<div class="flex flex-col items-center m-5 w-28 text-center hover:scale-125 duration-300 ease-out">
                 	<img src="./multimedia/css3.png" class="w-16">
                 	<p class="text-xl  text-cyan-100 font-semibold">Css 3 
                 	</p>
@@ -71,7 +71,7 @@
                 	tempor incididunt ut labore et dolore magna aliqua.
                		</p>
             	</div>
-				<div class="flex flex-col items-center m-5 w-28 text-center">
+				<div class="flex flex-col items-center m-5 w-28 text-center hover:scale-125 duration-300 ease-out">
                 	<img src="./multimedia/Javascript.png" class="w-16">
                 	<p class="text-xl  text-cyan-100 font-semibold">JavaScript 
                 	</p>
@@ -79,7 +79,7 @@
                 	tempor incididunt ut labore et dolore magna aliqua.
                		</p>
             	</div>				
-				<div class="flex flex-col items-center m-5 w-28 text-center">
+				<div class="flex flex-col items-center m-5 w-28 text-center hover:scale-125 duration-300 ease-out">
                 	<img src="./multimedia/python.png" class="w-16">
                 	<p class="text-xl  text-cyan-100 font-semibold">Python 
                 	</p>
@@ -87,7 +87,7 @@
                 	tempor incididunt ut labore et dolore magna aliqua.
                		</p>
             	</div>
-				<div class="flex flex-col items-center m-5 w-28 text-center">
+				<div class="flex flex-col items-center m-5 w-28 text-center hover:scale-125 duration-300 ease-out">
                 	<img src="./multimedia/github.png" class="w-16">
                 	<p class="text-xl  text-cyan-100 font-semibold">Git & Github 
                 	</p>
@@ -95,7 +95,7 @@
                 	tempor incididunt ut labore et dolore magna aliqua.
                		</p>
             	</div>
-				<div class="flex flex-col items-center m-5 w-28 text-center">
+				<div class="flex flex-col items-center m-5 w-28 text-center hover:scale-125 duration-300 ease-out">
                 	<img src="./multimedia/tailwindLogo.png" class="w-16">
                 	<p class="text-xl  text-cyan-100 font-semibold">Tailwind css
                 	</p>
@@ -108,48 +108,48 @@
 			</section>
 		
 			<article class="flex flex-col py-11 mb-3 mt-0 justify-center bg-color-secundary shadow-[-1px_0px_14px_1px_rgba(0,0,0,0.75)]">
-				<h5 class="mx-5 my-3 text-xl text-white font-semibold">Algunos de los proyectos que he realizado</h5>
-				<div class="flex flex-col justify-center">
-					<div class="flex flex-col justify-center relative my-6">
+				<h5 class="mx-5 my-3 text-xl text-white font-semibold sm:text-2xl sm:text-right mr-10">Algunos de los proyectos que he realizado</h5>
+				<div class="flex flex-col justify-center sm:flex-wrap sm:flex-row">
+					<div class="flex flex-col justify-center relative my-6 max-w-md sm:mt-10">
 						<a href="./index.html" target="_blank" class="flex justify-center w-full">
-							<img src="./multimedia/proyectos/batabitss.png" alt="foto del proyecto" class="w-11/12 p-3 border-2 border-cyan-500 rounded-lg hover:w-full hover:p-0 hover:border-0 hover:rounded-none ">
+							<img src="./multimedia/proyectos/batabitss.png" alt="foto del proyecto" class="w-11/12 p-3 border-2 border-cyan-500 rounded-lg hover:w-full duration-300 ease-linear hover:p-0 hover:border-0 hover:rounded-none ">
 						</a>
-						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5">Batabit</p>
+						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5 sm:text-base">Batabit</p>
 					</div>
-					<div class="flex flex-col justify-center relative my-6">
+					<div class="flex flex-col justify-center relative my-6 max-w-md">
 						<a href="./index.html" target="_blank" class="flex justify-center w-full">
-						<img src="./multimedia/proyectos/doctorwebss.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg hover:w-full hover:p-0 hover:border-0 hover:rounded-none ">
+						<img src="./multimedia/proyectos/doctorwebss.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg hover:w-full duration-300 ease-linear hover:p-0 hover:border-0 hover:rounded-none ">
 						</a>
-						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5">Doctorweb</p>
+						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5 sm:text-base">Doctorweb</p>
 					</div>
-					<div class="flex flex-col justify-center relative my-6">
+					<div class="flex flex-col justify-center relative my-6 max-w-md">
 						<a href="./index.html" target="_blank" class="flex justify-center w-full">
-						<img src="./multimedia/proyectos/googlecloness.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg hover:w-full hover:p-0 hover:border-0 hover:rounded-none ">
+						<img src="./multimedia/proyectos/googlecloness.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg hover:w-full duration-300 ease-linear hover:p-0 hover:border-0 hover:rounded-none ">
 						</a>
-						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5">Google clon</p>
+						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5 sm:text-base">Google clon</p>
 					</div>
-					<div class="flex flex-col justify-center relative my-6">
+					<div class="flex flex-col justify-center relative my-6 max-w-md">
 						<a href="./index.html" target="_blank" class="flex justify-center w-full">
-						<img src="./multimedia/proyectos/tuamigass.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg hover:w-full hover:p-0 hover:border-0 hover:rounded-none ">
+						<img src="./multimedia/proyectos/tuamigass.png" alt="foto del proyecto" class="w-11/12 p-3 border-2  border-cyan-500 rounded-lg hover:w-full duration-300 ease-linear hover:p-0 hover:border-0 hover:rounded-none ">
 						</a>
-						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5">Tu amiga</p>
+						<p class="flex justify-around bg-color-secundary rounded-lg text-white text-center text-sm font-medium p-1   box-border border-2 border-cyan-500 absolute -bottom-5 left-5 sm:text-base">Tu amiga</p>
 					</div>
 				</div>
 			</article>
-			<section class="bg-color-secundary py-6 my-14 shadow-[-1px_0px_14px_1px_rgba(0,0,0,0.75)]">
-				<div class="flex flex-col justify-center items-center m-3 border-2 border-cyan-500 rounded-lg">
+			<section class="flex justify-center align-center bg-color-secundary p-6 my-14 shadow-[-1px_0px_14px_1px_rgba(0,0,0,0.75)] lg:justify-end">
+				<div class="flex flex-col justify-center items-center w-full m-3 border-2 p-6 border-cyan-500 rounded-lg max-w-md">
 				<h3 class="text-white font-semibold text-2xl">Contacto</h4>
-				<form class="flex flex-col items-center w-11/12 relative mb-10">
+				<form class="flex flex-col items-center w-full relative">
 						<input type="text" name="Nombre" id="nombre_form" placeholder="Nombre" class="w-full h-10 my-2 rounded-lg px-3 bg-purple-900 border-2 border-slate-900 placeholder:text-white  placeholder:font-medium">
 						<input type="email" name="Email" id="email_form" placeholder="Tu correo electronico" class="w-full h-10 my-2 rounded-lg px-3 bg-purple-900 border-2 border-slate-900 placeholder:text-white placeholder:font-medium">
                         <input type="text" name="Descripcion" id="description_form" placeholder="Descripcion del servicio que estas nesecitando" class="w-full h-28 my-2 rounded-lg px-3 bg-purple-900 border-2 border-slate-900 placeholder:text-white placeholder:font-medium">
-						<input type="submit" name="submit" id="submit_form" class="w-1/2 h-8 my-3 bg-color-secundary rounded-lg text-white absolute -bottom-16 border-2 border-cyan-500">
+						<input type="submit" name="submit" id="submit_form" class="w-1/2 h-8 my-3 bg-color-secundary rounded-lg text-lg text-white absolute -bottom-14 border-2 border-cyan-500 hover:scale-110 duration-300 ease-linear">
 				</form>
 				</div>
 			</section>
-			<aside class="flex flex-col justify-center items-center w-16 h-16 fixed top-56 right-1 rounded-full hover:bg-color-secundary hover:border-2 hover:border-cyan-600"  onclick="despliegueMenuAside('')">
+			<aside class="flex flex-col justify-center items-center w-16 h-16 fixed top-56 right-1 rounded-full hover:bg-color-secundary hover:border-2 hover:border-cyan-600 hover:-translate-x-1  duration-300 ease-linear sm:w-20 sm:h-20"  onclick="despliegueMenuAside('')">
 				<div class="relative flex flex-col justify-center items-center">
-				<img src="./multimedia/logheader.png" alt="foto BD" class="w-14">
+				<img src="./multimedia/logheader.png" alt="foto BD" class="w-16">
 				<div class="hidden flex-col items-center absolute top-14 rounded-full" id="menuAside">
 					<a href="https://www.facebook.com/daniel.florez.37669" target="_blank" class="flex justify-center rounded-full hover:border-2 hover:border-cyan-500">
 						<img src="./multimedia/facebooklogo.png" alt="facebook" class="">
@@ -168,19 +168,19 @@
 			</aside>
 			<div class="flex flex-col justify-around items-center bg-slate-800 shadow-[-1px_5px_20px_1px_rgba(0,0,0,0.75)]">
 				<div class="w-full my-3 flex flex-row justify-around items-center">
-					<span class="w-12">
+					<span class="w-12 hover:scale-125  duration-200">
 						<img src="./multimedia/logHeader.png" alt="imgagen logo" class="w-full object-cover">
 					</span>
 						<!--cuando se da click se despliega las redes sociales con javascript-->
-					<span class="w-12" onclick="despliegueMenuFooter()" >
+					<span class="w-12 hover:translate-y-2 duration-500 delay-75 ease-out sm:hidden" onclick="despliegueMenuFooter()" >
 						<img src="./multimedia/footerarrwow.png" alt="foto de desplegablemenu" class="w-full object-cover">			
 					</span>
 				</div>	
-                <div class="hidden flex-wrap items-center justify-center" id="menuFooter" style="display: none">
-					<a href="http://" class="m-3 text-white font-medium hover:text-cyan-400 ">Informacion</a>
-					<a href="http://" class="m-3 text-white font-medium hover:text-cyan-400 ">Documentacion</a>
-					<a href="http://" class="m-3 text-white font-medium hover:text-cyan-400 ">Contacto</a>
-					<a href="http://" class="m-3 text-white font-medium hover:text-cyan-400 ">Multimedia</a>           
+                <div class="hidden flex-wrap items-center justify-center sm:flex" id="menuFooter">
+					<a href="http://" class="m-3 text-white font-medium hover:text-cyan-400 sm:text-lg">Informacion</a>
+					<a href="http://" class="m-3 text-white font-medium hover:text-cyan-400 sm:text-lg">Documentacion</a>
+					<a href="http://" class="m-3 text-white font-medium hover:text-cyan-400 sm:text-lg">Contacto</a>
+					<a href="http://" class="m-3 text-white font-medium hover:text-cyan-400 sm:text-lg">Multimedia</a>           
 				</div>
 			</div>
 			<footer class="text-center text-cyan-800 bg-black ">
